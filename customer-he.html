@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#15120C">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" type="text/css" href="./css/style-rtl.css">
+    <link rel="shortcut icon" type="image/png" href="./images/logo-black.png"/>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <title>Our Customers | Vision Technology Limited</title>
+</head>
+<body>
+    <div class="customer-page d-flex flex-column">
+        <!-- Header statrt here -->
+        <header class="d-flex align-items-center justify-content-between text-white p-md-4 p-3 pos-fix">
+            <div class="custom-navbar-mobile-button">
+                <button class="btn btn-transparent no-focus" onclick="toogleMenu();">
+                    <i class="fal fa-lg fa-bars golden-color cusor-point"></i>
+                </button>
+            </div>
+            <div class="d-flex align-items-center">
+                <div>
+                    <a href="./index-he.html">
+                        <img src="./images/logo-white.png" height="40px">
+                        <img src="./images/name.png" height="40px">
+                    </a>
+                </div>
+                <ul class="list-group list-group-flush list-group-horizontal custom-navbar ml-4">
+                    <li class="list-group-item px-2 bg-transparent border-0 text-uppercase"><a href="./index-he.html">ראשי</a></li>
+                    <li class="list-group-item px-2 bg-transparent border-0 text-uppercase"><a href="./about-he.html">אודותינו</a></li>
+                    <li class="list-group-item py-2 bg-transparent text-uppercase"><a href="./service-he.html">השירותים שלנו<i class='fas fa-arrow-down'></i></a></li>
+                    <li class="list-group-item px-2 bg-transparent border-0 text-uppercase active-item"><a href="./customer-he.html">לקוחותינו</a></li>
+                    <li class="list-group-item px-2 bg-transparent border-0 text-uppercase"><a href="./contact-he.html">יצירת קשר</a></li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center">
+                <button class="btn btn-golden rounded-0 px-4 text-uppercase no-focus custom-navbar-request-button" onclick="toogleRequestBox();">בַּקָשָׁה</button>
+                <div class="dropdown dropleft">
+                    <button class="btn btn-sm btn-transparent text-uppercase mr-3 text-white no-focus " type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        עִברִית <i class="fal fa-globe"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="./index.html">English</a>
+                        <a class="dropdown-item" href="./index-he.html">עִברִית</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Mobile Menu Here -->
+        <div class="mobile-menu-wrapper position-fixed w-100 vh-100" style="min-height: 400px;">
+            <div class="mobile-menu p-md-4 p-2 d-flex flex-column vh-100  overflow-auto">
+                <div class="d-flex justify-content-between align-items-start">
+                    <button class="btn btn-transparent no-focus" onclick="toogleMenu();">
+                        <i class="fal fa-lg fa-times text-white"></i>
+                    </button>
+                    <div class="text-center pt-3">
+                        <img src="./images/logo-golden.png" height="40px"><br>
+                        <img src="./images/name-golden.png" height="40px" class="mt-2">
+                    </div>
+                    <span><!-- Empty item --></span>
+                </div>
+                <div class="flex-grow-1">
+                    <div class="pt-5 text-center w-100">
+                        <div class="pb-3">
+                            <a href="#" class="text-white font-weight-bold">
+                                <span class="rounded-circle golden-border d-inline-block ml-2" style="height: 25px; width:25px; line-height: 25px;">
+                                    <i class="fa fa-phone fa-flip-horizontal golden-color"></i>
+                                </span>+077 886 78 56
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="text-white font-weight-bold">
+                                <span class="rounded-circle golden-border d-inline-block ml-2" style="height: 25px; width:25px; line-height: 25px;">
+                                    <i class="fa fa-envelope golden-color"></i>
+                                </span>hello@vtl.com
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-100 text-center pt-4">
+                        <ul class="list-group list-group-flush custom-navbar-mobile m-0">
+                            <li class="list-group-item py-2 bg-transparent text-uppercase"><a href="./index-he.html">ראשי</a></li>
+                            <li class="list-group-item py-2 bg-transparent text-uppercase"><a href="./about-he.html">אודותינו</a></li>
+                            <li class="list-group-item py-2 bg-transparent text-uppercase"><a href="./service-he.html">השירותים שלנו</a></li>
+                            <li class="list-group-item py-2 bg-transparent text-uppercase active-item"><a href="./customer-he.html">לקוחותינו</a></li>
+                            <li class="list-group-item py-2 bg-transparent text-uppercase"><a href="contact-he.html">יצירת קשר</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-center p-3">
+                    <div class="mb-4">
+                        <button class="btn btn-golden rounded-0 py-2 px-5 text-uppercase" onclick="toogleRequestBox();">בַּקָשָׁה</button>
+                    </div>
+                    <a href="#" class="text-white mx-3"><i class="fab fa-lg fa-facebook-f"></i></a>
+                    <a href="#" class="text-white mx-3"><i class="fab fa-lg fa-instagram"></i></a>
+                    <a href="#" class="text-white mx-3"><i class="fab fa-lg fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Request Popup starts here -->
+        <div class="request-wrapper position-fixed w-100 vh-100 overflow-auto flex-column">
+            <div class="d-flex justify-content-between p-md-4 p-2">
+                <button class="btn btn-transparent no-focus" onclick="toogleRequestBox();">
+                    <i class="fal fa-lg fa-times text-white"></i>
+                </button>
+            </div>
+            <div class="flex-grow-1">
+                <div class="request-wrapper-holder text-center mx-auto p-5">
+                    <h2 class="golden-color font-weight-normal font-montserrat">בקש או קבל מידע</h2>
+                    <p class="text-white py-3">המנהל שלנו יצור איתך קשר בעוד כחמש דקות</p>
+                    <form>
+                        <div class="pb-4">
+                            <input type="text" class="form-control custom-input no-focus" placeholder="השם שלך">
+                        </div>
+                        <div class="pb-4">
+                            <input type="text" class="form-control custom-input no-focus" placeholder="השם שלך">
+                        </div>
+                        <div class="pb-4">
+                            <input type="text" class="form-control custom-input no-focus" placeholder="מספר טלפון">
+                        </div>
+                        <div class="pb-4">
+                            <input type="email" class="form-control custom-input no-focus" placeholder="אימייל">
+                        </div>
+                        <div class="pb-4">
+                            <input type="text" class="form-control custom-input no-focus" placeholder="ההודעה שלך">
+                        </div>
+                        <div class="pt-4">
+                            <input type="submit" value="לִשְׁלוֹחַ" class="btn btn-golden rounded-0 px-5 py-2 text-uppercase">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+
+
+        <!-- Header Main Content Here -->
+        <div class="d-flex align-items-center justify-content-md-between justify-content-center flex-grow-1">
+            <div class="d-md-flex d-none flex-column align-items-center p-3 h-100">
+                <div class="border-left flex-grow-1"></div>
+                <div class="py-4"><i class="fal fa-lg fa-bars golden-color cusor-point"></i></div>
+                <div class="border-left flex-grow-1"></div>
+            </div>
+            <div class="text-white text-md-right text-center flex-grow-1 px-md-5 px-4">
+                <div class="mb-4 animated">
+                    <a href="#" class="text-white text-underline text-uppercase font-weight-bold">ראשי</a>
+                    <span class="breadcrumb-separator"></span>
+                    <span class="light-white-color text-uppercase ">הלקוחות שלנו</span>
+                </div>
+                <h1 class="mb-3 text-uppercase font-bebasneue display-3 font-weight-bold animated">הלקוחות שלנו</h1>
+                <div class="header-text animated">
+                    שנה את דרכיך להעביר את הסחורה שלך בקלות ובבטיחות איתנו, כדי לקבל את השירות הטוב ביותר אנא פנה אלינו באמצעות הודעה קצרה או טלפון
+                </div>
+            </div>
+            <div class="d-md-flex d-none flex-column justify-content-center p-3 h-100" style="width:50px;">
+                <div class="social-link-rotate-90 text-nowrap">
+                    <a href="#" class="text-white d-inline-block mx-3 social-link-text">אינסטגרם</a>
+                    <a href="#" class="text-white d-inline-block mx-3 social-link-text">פייסבוק</a>
+                    <a href="#" class="text-white d-inline-block mx-3 social-link-text">טוויטר</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main page content starts here -->
+    <div class="container-fluid mx-auto bg-white p-5">
+        <div class="px-md-5 px-0">
+            <p class="max-width-800 mx-auto text-justify animate-it">
+                חברת Vision Technology Limited הוקמה על ידי יוני רוזיליו, איש עסקים סיני / ישראלי המתגורר כבר למעלה מ- 13 שנים בשווקים הסיניים במטרה להוות כלי מתווך ויעיל לניהול עסקים בסין עבור חברות, עסקים ויזמים ישראליים ואמריקאים.
+            </p>
+            <div class="row py-5">
+                <div class="animate-it min-h-185 col-lg-4 col-md-6 col-12 mb-5 d-flex align-items-center justify-content-center">
+                    <img src="./images/client1.png" height="60">
+                </div>
+                <div class="animate-it min-h-185 col-lg-4 col-md-6 col-12 mb-5 d-flex align-items-center justify-content-center">
+                    <img src="./images/client2.png" height="115">
+                </div>
+                <div class="animate-it min-h-185 col-lg-4 col-md-6 col-12 mb-5 d-flex align-items-center justify-content-center">
+                    <img src="./images/client3.png" height="60">
+                </div>
+                <div class="animate-it min-h-185 col-lg-4 col-md-6 col-12 mb-5 d-flex align-items-center justify-content-center">
+                    <img src="./images/client4.png" height="60">
+                </div>
+                <div class="animate-it min-h-185 col-lg-4 col-md-6 col-12 mb-5 d-flex align-items-center justify-content-center">
+                    <img src="./images/client5.png" height="85">
+                </div>
+                <div class="animate-it min-h-185 col-lg-4 col-md-6 col-12 mb-5 d-flex align-items-center justify-content-center">
+                    <img src="./images/client6.png" height="85">
+                </div>
+                <div class="animate-it min-h-185 col-lg-4 col-md-6 col-12 mb-5 d-flex align-items-center justify-content-center">
+                    <img src="./images/client7.png" height="180">
+                </div>
+                <div class="animate-it min-h-185 col-lg-4 col-md-6 col-12 mb-5 d-flex align-items-center justify-content-center">
+                    <img src="./images/client8.png" height="72">
+                </div>
+                <div class="animate-it min-h-185 col-lg-4 col-md-6 col-12 d-flex align-items-center justify-content-center">
+                    <img src="./images/client9.png" height="120">
+                </div>
+                <div class="col-12 pt-5 text-center golden-border-top">
+                    <h2 class="golden-color font-montserrat font-weight-bold animate-it ">אני רוצה להיות לקוח שלך</h2>
+                    <p class="max-width-800 mx-auto pt-4 animate-it ">
+                        חברת Vision Technology Limited הוקמה על ידי יוני רוזיליו, איש עסקים סיני / ישראלי המתגורר כבר למעלה מ- 13 שנים בשווקים הסיניים במטרה להוות כלי מתווך ויעיל לניהול עסקים בסין עבור חברות, עסקים ויזמים ישראליים ואמריקאים.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Starts Here -->
+    <footer>
+        <div class="container-fluid dark-background p-5 text-right">
+            <div class="px-md-5 mx-lg-5 mx-0 py-5 px-0">
+                <div class="row">
+                    <div class="col-lg-5 col-md-6 col-12 order-1 mb-md-0 mb-5">
+                        <span class="text-uppercase light-white-color small animate-it">להכיר</span>
+                        <h2 class="golden-color font-weight-normal font-montserrat my-4 animate-it">אנו נענה לשאלותיך, אם הן כן</h2>
+                        <p class="text-white animate-it">הים הגדול ביותר בעולם מוביל ויש לו משרדי שותפים ברחבי העולם עם סך של 1200 שותפים הפרוסים על פני מדינות שונות מאסיה לאירופה.</p>
+                    </div>
+                    <div class="col-lg-2 col-12 order-lg-2 order-3"></div>
+                    <div class="col-lg-5 col-md-6 col-12 order-lg-3 order-2">
+                        <form class="animate-it">
+                            <div class="pb-4">
+                                <input type="text" class="form-control custom-input no-focus" placeholder="השם שלך">
+                            </div>
+                            <div class="pb-4">
+                                <input type="text" class="form-control custom-input no-focus" placeholder="השם שלך">
+                            </div>
+                            <div class="pb-4">
+                                <input type="text" class="form-control custom-input no-focus" placeholder="מספר טלפון">
+                            </div>
+                            <div class="pb-4">
+                                <input type="email" class="form-control custom-input no-focus" placeholder="אימייל">
+                            </div>
+                            <div class="pb-4">
+                                <input type="text" class="form-control custom-input no-focus" placeholder="ההודעה שלך">
+                            </div>
+                            <div class="pt-4">
+                                <input type="submit" value="לִשְׁלוֹחַ" class="btn btn-golden rounded-0 px-5 py-2 text-uppercase">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid black-background p-5 ">
+            <div class="px-md-5 mx-lg-5 mx-0 pt-5 px-0">
+                <div class="row">
+                    <div class="col-lg-5 col-md-6 col-12 mb-4">
+                        <!-- <h6 class="text-white font-weight-bold font-opensans mb-4">VTL</h6> -->
+                        <img src="./images/logo-white.png" alt="logo" height="40px">
+                        <img src="./images/name.png" alt="name" height="40px">
+                        <p class="light-white-color font-opensans mt-3">שירותי משלוחי המטען והלוגיסטיקה הטובים בעולם</p>
+                        <ul class="list-inline list-unstyled pt-4">
+                            <li class="d-inline-block mr-3"><a href="#" class="light-white-color"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="d-inline-block mx-3"><a href="#" class="light-white-color"><i class="fab fa-instagram"></i></a></li>
+                            <li class="d-inline-block ml-3"><a href="#" class="light-white-color"><i class="fab fa-twitter" style="color: #BF9263;"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-7 col-md-6 col-12">
+                        <div class="row">
+                            <div class="col-md-4 col-12 mb-4">
+                                <h5 class="font-weight-bold mb-4 font-bebasneue golden-color">חֶברָה</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><a href="#" class="light-white-color">עלינו</a></li>
+                                    <li class="mb-2"><a href="#" class="light-white-color">צור קשר</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-12 mb-4">
+                                <h5 class="font-weight-bold mb-4 font-bebasneue golden-color">שירותים</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">
+                                        <a href="#" class="light-white-color">
+                                            סטורגה, שילוח ולוגיסטיקה מסין לארה"ב
+                                        </a>
+                                    </li>
+                                    <li class="mb-2"><a href="#" class="light-white-color">אִחסוּן</a></li>
+                                    <li class="mb-2"><a href="#" class="light-white-color">לוגיסטיקה בסין</a></li>
+                                    <li class="mb-2"><a href="#" class="light-white-color">משלוח מסין</a></li>
+                                    <li class="mb-2"><a href="#" class="light-white-color">אחסון והפצה בינלאומיים</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <h5 class="font-weight-bold mb-4 font-bebasneue golden-color">תמיכה</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><a href="#" class="light-white-color">שאלות נפוצות</a></li>
+                                    <li class="mb-2"><a href="#" class="light-white-color">פרטיות ומדיניות</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-4 pt-5">
+                        <div class="row">
+                            <div class="col-md-6 col-12 light-white-color text-md-right text-center mb-md-0 mb-3">
+                                זכויות יוצרים 2021 בסדר 
+                            </div>
+                            <div class="col-md-6 col-12 light-white-color text-md-left text-center">
+                                Made in <a href="#" class="light-white-color font-weight-bold">ROSS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-transparent no-focus rounded-circle position-fixed golden-color golden-border back-to-top">
+            <i class="fal fa-2x fa-long-arrow-up"></i>
+        </button>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="./javascript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#15120C">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" type="text/css" href="./css/style-ltr.css">
+    <link rel="shortcut icon" type="image/png" href="./images/logo-black.png"/>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+    <style>
+        .preloader{
+            width: 100vw;
+            height: 100vh;
+            background-color: #15120C;
+            z-index: 1000;
+            position: fixed;
+            top:0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+
+    <title>Home | Vision Technology Limited</title>
+</head>
+<body>
+    <div class="preloader">
+        <div style="text-align: center;">
+            <img src="./images/logo-golden.png" height="60"><br>
+            <img src="./images/name-golden.png" height="60" style="margin-top: 20px;">
+        </div>
+    </div>
+
+    <div class="home-page-wrapper position-relative overflow-hidden text-center">
+        <video class="home-page-video" autoplay muted loop>
+            <source src="./videos/home-video.mp4" type="video/mp4">
+        </video>
+        <div class="home-page d-flex flex-column">
+            <!-- Header Here  -->
+            <header class="d-flex align-items-center justify-content-between text-white p-md-4 p-3">
+                <div class="custom-navbar-mobile-button">
+                    <button class="btn btn-transparent no-focus" onclick="toogleMenu();">
+                        <i class="fal fa-lg fa-bars golden-color cusor-point cusor-point"></i>
+                    </button>
+                </div>
+                <div class="d-flex align-items-center">
+                    <ul class="list-group list-group-flush list-group-horizontal custom-navbar ml-4">
+                        <li class="list-group-item px-2 bg-transparent border-0 text-uppercase active-item"><a href="./index.html">Home</a></li>
+                        <li class="list-group-item px-2 bg-transparent border-0 text-uppercase"><a href="./about-en.html">About us</a></li>
+                        <li class="list-group-item px-2 bg-transparent border-0 text-uppercase">
+                            <div class="dropdown custom-navbar-dropdown">
+                                <a href="./service-en.html">
+                                    Service's <i class="fal fa-sm fa-long-arrow-down ml-1"></i>
+                                </a>
+                                <div class="dropdown-menu mt-3">
+                                    <a class="dropdown-item" href="./locating-suppliers-in-china-en.html">Logistics Supplier in china</a>
+                                    <a class="dropdown-item" href="./representation-and-personal-en.html">Representaion and personal supplier</a>
+                                    <a class="dropdown-item" href="./product-development-en.html">Product Management</a>
+                                    <a class="dropdown-item" href="./storage-and-logistics-en.html">Logistics &amp; supply</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item px-2 bg-transparent border-0 text-uppercase"><a href="./customer-en.html">Our Customers</a></li>
+                        <li class="list-group-item px-2 bg-transparent border-0 text-uppercase"><a href="./contact-en.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-golden-outline font-weight-bold rounded-0 px-4 text-uppercase no-focus custom-navbar-request-button" onclick="toogleRequestBox();">Request</button>
+                    <div class="dropdown dropleft">
+                        <button class="btn btn-sm btn-transparent text-uppercase ml-3 text-white no-focus " type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fal fa-globe"></i> En
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="./index.html">English</a>
+                            <a class="dropdown-item" href="./index-he.html">עִברִית</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- Mobile Menu Here -->
+            <div class="mobile-menu-wrapper position-fixed w-100 vh-100" style="min-height: 400px;">
+                <div class="mobile-menu p-md-4 p-2 d-flex flex-column vh-100  overflow-auto">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <button class="btn btn-transparent no-focus" onclick="toogleMenu();">
+                            <i class="fal fa-lg fa-times text-white"></i>
+                        </button>
+                        <div class="text-center pt-3 animate-it">
+                            <img src="./images/logo-golden.png" height="40px"><br>
+                            <img src="./images/name-golden.png" height="40px" class="mt-2">
+                        </div>
+                        <span><!-- Empty item --></span>
+                    </div>
+                    <div class="flex-grow-1">
+                        <div class="pt-5 text-center w-100">
+                            <div class="pb-3 animate-it">
+                                <a href="#" class="text-white font-weight-bold animate-it">
+                                    <span class="rounded-circle golden-border d-inline-block mr-2" style="height: 25px; width:25px; line-height: 25px;">
+                                        <i class="fa fa-phone fa-flip-horizontal golden-color"></i>
+                                    </span>+077 886 78 56
+                                </a>
+                            </div>
+                            <div class="animate-it">
+                                <a href="#" class="text-white font-weight-bold">
+                                    <span class="rounded-circle golden-border d-inline-block mr-2" style="height: 25px; width:25px; line-height: 25px;">
+                                        <i class="fa fa-envelope golden-color"></i>
+                                    </span>hello@vtl.com
+                                </a>
+                            </div>
+                        </div>
+                        <div class="w-100 text-center pt-4">
+                            <ul class="list-group list-group-flush custom-navbar-mobile m-0">
+                                <li class="list-group-item py-2 bg-transparent text-uppercase animate-it active-item"><a href="#">Home</a></li>
+                                <li class="list-group-item py-2 bg-transparent text-uppercase animate-it"><a href="./about-en.html">About us</a></li>
+                                <li class="list-group-item py-2 bg-transparent text-uppercase animate-it">
+                                    <a href="#mobileServiceMenu" data-toggle="collapse">
+                                        Service's <i class="fal fa-sm fa-long-arrow-down ml-1"></i>
+                                    </a>
+                                    <div class="collapse border rounded-lg" id="mobileServiceMenu">
+                                        <ul class="list-group list-group-flush custom-navbar-mobile m-0">
+                                            <li class="list-group-item py-2 bg-transparent text-uppercase"><a href="./locating-suppliers-in-china-en.html">Logistics Supplier in china</a></li>
+                                            <li class="list-group-item py-2 bg-transparent text-uppercase"><a href="./representation-and-personal-en.html">Representaion and personal supplier</a></li>
+                                            <li class="list-group-item py-2 bg-transparent text-uppercase"><a href="./product-development-en.html">Product Management</a></li>
+                                            <li class="list-group-item py-2 bg-transparent text-uppercase"><a href="./storage-and-logistics-en.html">Logistics &amp; supply</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="list-group-item py-2 bg-transparent text-uppercase animate-it"><a href="./customer-en.html">Our Customers</a></li>
+                                <li class="list-group-item py-2 bg-transparent text-uppercase animate-it "><a href="./contact-en.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="text-center p-3">
+                        <div class="mb-4 animate-it">
+                            <button class="btn btn-golden-outline rounded-0 py-2 px-5 text-uppercase" onclick="toogleRequestBox();">Request</button>
+                        </div>
+                        <div class="animate-it">
+                            <a href="#" class="text-white mx-3 golden-hover animate-it"><i class="fab fa-lg fa-facebook-f"></i></a>
+                            <a href="#" class="text-white mx-3 golden-hover animate-it"><i class="fab fa-lg fa-instagram"></i></a>
+                            <a href="#" class="text-white mx-3 golden-hover animate-it"><i class="fab fa-lg fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Request Popup starts here -->
+            <div class="request-wrapper position-fixed w-100 vh-100 overflow-auto flex-column">
+                <div class="d-flex justify-content-between p-md-4 p-2">
+                    <button class="btn btn-transparent no-focus" onclick="toogleRequestBox();">
+                        <i class="fal fa-lg fa-times text-white"></i>
+                    </button>
+                </div>
+                <div class="flex-grow-1">
+                    <div class="request-wrapper-holder text-center mx-auto p-5">
+                        <h2 class="golden-color font-weight-normal font-montserrat">Request or get Information</h2>
+                        <p class="text-white py-3">Our manager will contact with you in about five minutes</p>
+                        <form>
+                            <div class="pb-4">
+                                <input type="text" class="form-control custom-input no-focus" placeholder="Your name">
+                            </div>
+                            <div class="pb-4">
+                                <input type="text" class="form-control custom-input no-focus" placeholder="Your company">
+                            </div>
+                            <div class="pb-4">
+                                <input type="text" class="form-control custom-input no-focus" placeholder="Phone Number">
+                            </div>
+                            <div class="pb-4">
+                                <input type="email" class="form-control custom-input no-focus" placeholder="Email">
+                            </div>
+                            <div class="pb-4">
+                                <input type="text" class="form-control custom-input no-focus" placeholder="Your message">
+                            </div>
+                            <div class="pt-4">
+                                <input type="submit" value="send" class="btn btn-golden rounded-0 px-5 py-2 text-uppercase">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Header Main Content Here -->
+            <div class="d-flex align-items-center justify-content-md-between justify-content-center flex-grow-1">
+                <!-- <div class="d-md-flex d-none flex-column align-items-center p-3 h-100">
+                    <div class="border-left flex-grow-1"></div>
+                    <div class="py-4"><i class="fal fa-lg fa-bars golden-color cusor-point cusor-point"></i></div>
+                    <div class="border-left flex-grow-1"></div>
+                </div> -->
+                <div><!-- Empty item --></div>
+                <div class="text-white text-center flex-grow-1 px-md-5 px-4">
+                    <div class="text-center animated">
+                        <img src="./images/logo-golden.png" height="55px">
+                        <div class="pt-3 pb-4">
+                            <img src="./images/name-golden.png" height="55px">
+                        </div>
+                    </div>
+                    <h1 class="animated mb-3 text-uppercase font-bebasneue display-3 max-width-800 mx-auto heading-overflow-control font-weight-bold">
+                        Transform the way you move your freight
+                    </h1>
+                    <div class="header-text mx-auto animated">
+                        Change your ways move your goods easily and safely with us, to get the best service please contact us via short message or telephone
+                        <div class="home-header-request pt-4">
+                            <button class="btn btn-golden-outline text-white rounded-0 px-5 py-2 text-uppercase" onclick="toogleRequestBox();">Request</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-md-flex d-none flex-column justify-content-center p-3 h-100" style="width:50px;">
+                    <div class="social-link-rotate-90 text-nowrap">
+                        <a href="#" class="text-white d-inline-block mx-3 social-link-text">Instagram</a>
+                        <a href="#" class="text-white d-inline-block mx-3 social-link-text">Facebook</a>
+                        <a href="#" class="text-white d-inline-block mx-3 social-link-text">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Social Link for mobile view here -->
+            <div class="d-md-none d-block text-center px-3 py-3 pb-4">
+                <a href="#" class="text-white golden-hover mx-3"><i class="fab fa-lg fa-facebook-f"></i></a>
+                <a href="#" class="text-white golden-hover mx-3"><i class="fab fa-lg fa-instagram"></i></a>
+                <a href="#" class="text-white golden-hover mx-3"><i class="fab fa-lg fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second header starts here -->
+    <div class="home-page-2 d-flex flex-column">
+        <!-- Header Here  -->
+        <header class="d-flex align-items-center justify-content-between text-white p-md-4 p-3 pos-fix">
+            <div class="custom-navbar-mobile-button">
+                <button class="btn btn-transparent no-focus" onclick="toogleMenu();">
+                    <i class="fal fa-lg fa-bars golden-color cusor-point cusor-point"></i>
+                </button>
+            </div>
+            <div class="d-flex align-items-center">
+                <div>
+                    <img src="./images/logo-white.png" height="40px">
+                    <img src="./images/name.png" height="40px">
+                </div>
+                <ul class="list-group list-group-flush list-group-horizontal custom-navbar ml-4">
+                    <li class="list-group-item px-2 bg-transparent border-0 text-uppercase active-item"><a href="./index.html">Home</a></li>
+                    <li class="list-group-item px-2 bg-transparent border-0 text-uppercase"><a href="./about-en.html">About us</a></li>
+                    <li class="list-group-item px-2 bg-transparent border-0 text-uppercase">
+                        <div class="dropdown custom-navbar-dropdown">
+                            <a href="./service-en.html">
+                                Service's <i class="fal fa-sm fa-long-arrow-down ml-1"></i>
+                            </a>
+                            <div class="dropdown-menu mt-3">
+                                <a class="dropdown-item" href="./locating-suppliers-in-china-en.html">Logistics Supplier in china</a>
+                                <a class="dropdown-item" href="./representation-and-personal-en.html">Representaion and personal supplier</a>
+                                <a class="dropdown-item" href="./product-development-en.html">Product Management</a>
+                                <a class="dropdown-item" href="./storage-and-logistics-en.html">Logistics &amp; supply</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item px-2 bg-transparent border-0 text-uppercase"><a href="./customer-en.html">Our Customers</a></li>
+                    <li class="list-group-item px-2 bg-transparent border-0 text-uppercase"><a href="./contact-en.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center">
+                <button class="btn btn-golden-outline rounded-0 px-4 text-uppercase no-focus custom-navbar-request-button" onclick="toogleRequestBox();">Request</button>
+                <div class="dropdown dropleft">
+                    <button class="btn btn-sm btn-transparent text-uppercase ml-3 text-white no-focus " type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fal fa-globe"></i> En
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="./index.html">English</a>
+                        <a class="dropdown-item" href="./index-he.html">עִברִית</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Home Section 2 Here -->
+        <div class="d-flex align-items-center justify-content-md-between justify-content-center flex-grow-1">
+            <div class="d-md-flex d-none flex-column align-items-center p-3" style="min-height: calc(100vh - 100px);">
+                <div class="border-left flex-grow-1"></div>
+                <div class="py-4"><i class="fal fa-lg fa-bars golden-color cusor-point cusor-point"></i></div>
+                <div class="border-left flex-grow-1"></div>
+            </div>
+            <div class="text-md-left text-center flex-grow-1 px-md-5 px-4 py-md-0 py-4">
+    
+                <div id="home-page-2-carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner px-lg-5 px-3">
+                        <div class="carousel-item px-5 active" data-interval="2000">
+                            <div class="row">
+                                <div class="col-lg-7 col-12">
+                                    <div class="h-100 d-flex justify-content-center px-md-4 py-4 px-0 flex-column">
+                                        <div class="mb-4 light-white-color text-uppercase">main SERVICE’S</div>
+                                        <h1 class="h2 mb-3 text-uppercase golden-color font-bebasneue font-weight-light heading-overflow-control">Storge, shipping and logistics from China to USA</h1>
+                                        <div class="header-text text-white pb-4 d-lg-block d-none">
+                                            As part of the services that Vision Technology Limited provides, we also specialize 
+                                            in warehousing solutions in China, logistics in China and shipping from China.
+                                            <span class="d-none">
+                                                With the purchasing power of hundreds of containers a year, and tools and 
+                                                capabilities fully controlled by us, our customers enjoy the best and most efficient warehousing prices in China and logistics.
+                                            </span>
+                                        </div>
+                                        <div class="d-lg-block d-none">
+                                            <a href="#" class="text-white font-weight-bold h6 text-underline text-uppercase">More info <i class="fal fa-long-arrow-right ml-2" style="font-size: 12px;"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-12">
+                                    <img src="./images/shipping-container-terminal-at-night-P9CAY4A 2.png" class="rounded-lg w-100">
+                                </div>
+                                <div class="col-12 d-lg-none d-block p-4">
+                                    <div class="header-text text-white pb-4">
+                                        As part of the services that Vision Technology Limited provides, we also specialize 
+                                        in warehousing solutions in China, logistics in China and shipping from China.
+                                        <span class="d-none">
+                                            With the purchasing power of hundreds of containers a year, and tools and 
+                                            capabilities fully controlled by us, our customers enjoy the best and most efficient warehousing prices in China and logistics.
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="text-white font-weight-bold h6 text-underline text-uppercase">More Info <i class="fal fa-long-arrow-right ml-2" style="font-size: 12px;"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item px-5" data-interval="2000">
+                            <div class="row">
+                                <div class="col-lg-7 col-12">
+                                    <div class="h-100 d-flex justify-content-center px-md-4 py-4 px-0 flex-column">
+                                        <div class="mb-4 light-white-color text-uppercase">main SERVICE’S</div>
+                                        <h1 class="h2 mb-3 text-uppercase golden-color font-bebasneue font-weight-light heading-overflow-control">storage</h1>
+                                        <div class="header-text text-white pb-4 d-lg-block d-none">
+                                            Storage solutions in China are flexible and creative for every requirement
+                                            Storage by containers, pallets or crates
+                                        </div>
+                                        <div class="d-lg-block d-none">
+                                            <a href="#" class="text-white font-weight-bold h6 text-underline text-uppercase">More info <i class="fal fa-long-arrow-right ml-2" style="font-size: 12px;"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-12">
+                                    <img src="./images/shipping-container-terminal-at-night-P9CAY4A 2.png" class="rounded-lg w-100">
+                                </div>
+                                <div class="col-12 d-lg-none d-block p-4">
+                                    <div class="header-text text-white pb-4">
+                                        Storage solutions in China are flexible and creative for every requirement
+                                        Storage by containers, pallets or crates
+                                    </div>
+                                    <div>
+                                        <a href="#" class="text-white font-weight-bold h6 text-underline text-uppercase">More Info <i class="fal fa-long-arrow-right ml-2" style="font-size: 12px;"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item px-5" data-interval="2000">
+                            <div class="row">
+                                <div class="col-lg-7 col-12">
+                                    <div class="h-100 d-flex justify-content-center px-md-4 py-4 px-0 flex-column">
+                                        <div class="mb-4 light-white-color text-uppercase">main SERVICE’S</div>
+                                        <h1 class="h2 mb-3 text-uppercase golden-color font-bebasneue font-weight-light heading-overflow-control">Logistics in China</h1>
+                                        <div class="header-text text-white pb-4 d-lg-block d-none">
+                                            Transportation of goods in China
+                                            Transportation and concentration of products from various suppliers in China
+                                            Treatment of local bureaucracy
+                                        </div>
+                                        <div class="d-lg-block d-none">
+                                            <a href="#" class="text-white font-weight-bold h6 text-underline text-uppercase">More info <i class="fal fa-long-arrow-right ml-2" style="font-size: 12px;"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-12">
+                                    <img src="./images/shipping-container-terminal-at-night-P9CAY4A 2.png" class="rounded-lg w-100">
+                                </div>
+                                <div class="col-12 d-lg-none d-block p-4">
+                                    <div class="header-text text-white pb-4">
+                                        Transportation of goods in China
+                                        Transportation and concentration of products from various suppliers in China
+                                        Treatment of local bureaucracy
+                                    </div>
+                                    <div>
+                                        <a href="#" class="text-white font-weight-bold h6 text-underline text-uppercase">More Info <i class="fal fa-long-arrow-right ml-2" style="font-size: 12px;"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item px-5" data-interval="2000">
+                            <div class="row">
+                                <div class="col-lg-7 col-12">
+                                    <div class="h-100 d-flex justify-content-center px-md-4 py-4 px-0 flex-column">
+                                        <div class="mb-4 light-white-color text-uppercase">main SERVICE’S</div>
+                                        <h1 class="h2 mb-3 text-uppercase golden-color font-bebasneue font-weight-light heading-overflow-control">Shipping from China</h1>
+                                        <div class="header-text text-white pb-4 d-lg-block d-none">
+                                            Partial and full container
+                                            Concentrated air or sea shipping from multiple orders / suppliers
+                                            Handling documents and customs
+                                            For each shipment full insurance for shipment from China
+                                        </div>
+                                        <div class="d-lg-block d-none">
+                                            <a href="#" class="text-white font-weight-bold h6 text-underline text-uppercase">More info <i class="fal fa-long-arrow-right ml-2" style="font-size: 12px;"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-12">
+                                    <img src="./images/shipping-container-terminal-at-night-P9CAY4A 2.png" class="rounded-lg w-100">
+                                </div>
+                                <div class="col-12 d-lg-none d-block p-4">
+                                    <div class="header-text text-white pb-4">
+                                        Partial and full container
+                                        Concentrated air or sea shipping from multiple orders / suppliers
+                                        Handling documents and customs
+                                        For each shipment full insurance for shipment from China
+                                    </div>
+                                    <div>
+                                        <a href="#" class="text-white font-weight-bold h6 text-underline text-uppercase">More Info <i class="fal fa-long-arrow-right ml-2" style="font-size: 12px;"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item px-5" data-interval="2000">
+                            <div class="row">
+                                <div class="col-lg-7 col-12">
+                                    <div class="h-100 d-flex justify-content-center px-md-4 py-4 px-0 flex-column">
+                                        <div class="mb-4 light-white-color text-uppercase">main SERVICE’S</div>
+                                        <h1 class="h2 mb-3 text-uppercase golden-color font-bebasneue font-weight-light heading-overflow-control">International storage and distribution</h1>
+                                        <div class="header-text text-white pb-4 d-lg-block d-none">
+                                            Absorption of products from different suppliers
+                                            Product storage and catalog
+                                            Pasting and marking products
+                                            Product preparation and packaging for shipping
+                                            Distribution of products to customers in USA and around the world
+                                        </div>
+                                        <div class="d-lg-block d-none">
+                                            <a href="#" class="text-white font-weight-bold h6 text-underline text-uppercase">More info <i class="fal fa-long-arrow-right ml-2" style="font-size: 12px;"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-12">
+                                    <img src="./images/shipping-container-terminal-at-night-P9CAY4A 2.png" class="rounded-lg w-100">
+                                </div>
+                                <div class="col-12 d-lg-none d-block p-4">
+                                    <div class="header-text text-white pb-4">
+                                        Absorption of products from different suppliers
+                                        Product storage and catalog
+                                        Pasting and marking products
+                                        Product preparation and packaging for shipping
+                                        Distribution of products to customers in USA and around the world
+                                    </div>
+                                    <div>
+                                        <a href="#" class="text-white font-weight-bold h6 text-underline text-uppercase">More Info <i class="fal fa-long-arrow-right ml-2" style="font-size: 12px;"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev home-page-2-carousel-prev rounded-circle" href="#home-page-2-carousel" role="button" data-slide="prev">
+                        <i class="fal fa-long-arrow-left golden-color"></i>
+                    </a>
+                    <a class="carousel-control-next home-page-2-carousel-next rounded-circle" href="#home-page-2-carousel" role="button" data-slide="next">
+                        <i class="fal fa-long-arrow-right golden-color"></i>
+                    </a>
+                </div>
+
+
+            </div>
+            <div class="d-md-flex d-none flex-column justify-content-center p-3 h-100" style="width:50px;">
+                <div class="social-link-rotate-90-2 text-nowrap">
+                    <a href="#" class="text-white d-inline-block mx-3 social-link-text">Instagram</a>
+                    <a href="#" class="text-white d-inline-block mx-3 social-link-text">Facebook</a>
+                    <a href="#" class="text-white d-inline-block mx-3 social-link-text">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home Section 3 Here -->
+    <div class="container-fluid dark-background p-5">
+        <div class="px-md-5 px-0 py-md-5 py-4 mx-lg-5 mx-0">
+            <div class="row">
+                <div class="col-lg-5 col-md-8 col-12 text-md-left text-center animate-it">
+                    <h2 class="h2 golden-color font-weight-light">Why should you use our services</h2>
+                    <p class="text-white py-4 font-opensans">
+                        Why you have to use our services, because you will get a very satisfying service and your goods are guaranteed safe
+                    </p>
+                </div>
+                <div class="col-12 py-4"></div>
+                <div class="col-lg-4 col-12 mb-md-0 mb-5 text-md-left text-center animate-it">
+                    <span class="rounded-circle golden-border icon-50 text-white">
+                        <span class="dollar-border" style="top:-4px;">
+                            $
+                        </span>
+                    </span>
+                    <h3 class="golden-color text-uppercase font-bebasneue mt-4 mb-3" style="letter-spacing: 1px;">Transparent Pricing</h3>
+                    <p class="text-white m-0">The price is transparent and also competes with other cargo services</p>
+                </div>
+                <div class="col-lg-4 col-12 mb-md-0 mb-5 text-md-left text-center animate-it">
+                    <span class="rounded-circle golden-border icon-50 text-white">
+                        <i class="fal fa-headset"></i>
+                    </span>
+                    <h3 class="golden-color text-uppercase font-bebasneue mt-4 mb-3" style="letter-spacing: 1px;">Custemer service 24/7</h3>
+                    <p class="text-white m-0">You can do consultations and ask questions 24 hours without stopping</p>
+                </div>
+                <div class="col-lg-4 col-12 text-md-left text-center animate-it">
+                    <span class="rounded-circle golden-border icon-50 text-white ">
+                        <i class="fal fa-shield-check"></i>
+                    </span>
+                    <h3 class="golden-color text-uppercase font-bebasneue mt-4 mb-3" style="letter-spacing: 1px;">Security for cargo</h3>
+                    <p class="text-white m-0">The safety of your goods is guaranteed because we have quality control</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+    <!-- Why we section starts here -->
+    <div class="container-fluid light-grey-background mx-0 pr-0 pl-5 pb-5">
+        <div class="pl-md-5 ml-lg-4 mr-0 pr-0">
+            <div class="row mx-0 pl-2">
+                <div class="col-lg-5 col-md-6 col-12 d-flex align-items-center">
+                    <div>
+                        <h2 class="golden-color font-weight-normal font-opensans my-4 animate-it">Why we</h2>
+                        <p class="font-opensans mb-5 animate-it">
+                            Why you have to use our services, because you will get a very satisfying service and your goods are guaranteed safe
+                        </p>
+                        <div class="animate-it">
+                            <a href="./about-en.html" class="black-color font-weight-bold h6 text-underline text-uppercase">More about us <i class="fal fa-long-arrow-right ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 col-12 pr-0">
+                    <img src="./images/container.png" class="w-100 mx-auto">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Stats Section Here -->
+    <div class="container-fluid black-background p-5">
+        <div class="px-md-5 mx-lg-5 mx-0 pt-5 px-0">
+            <div class="row">
+                <div class="col-lg-5 col-md-6 col-12 mb-5">
+                    <span class="text-uppercase light-white-color small animate-it">we are the best</span>
+                    <h2 class="golden-color font-weight-normaltext-uppercase font-opensans my-4 animate-it">World largest ocean transport our statistics</h2>
+                    <p class="font-opensans text-white mb-5 animate-it">
+                        The largest sea in the world transports and has partner offices around the world with a total of 1200 partners spread across various countries from Asia to Europe
+                    </p>
+                    <button class="btn btn-golden rounded-0 px-4 py-3 animate-it" onclick="toogleRequestBox();">Send Request</button>
+                </div>
+                <div class="col-lg-7 col-md-6 col-12">
+                    <div class="row pt-3">
+                        <div class="col-lg-6 col-6 mb-5 animate-it">
+                            <h2 class="text-white font-weight-bold mb-3 font-bebasneue" style="letter-spacing: 0px;">134</h2>
+                            <h4 class="golden-color">Countries in the world</h4>
+                            <p class="text-secondary">Partners around the world to provide services and connected</p>
+                        </div>
+                        <div class="col-lg-6 col-6 mb-5 animate-it">
+                            <h2 class="text-white font-weight-bold mb-3 font-bebasneue" style="letter-spacing: 0px;">120K</h2>
+                            <h4 class="golden-color">Big customer</h4>
+                            <p class="text-secondary">customers spread all over the world make us big and number one</p>
+                        </div>
+                        <div class="col-lg-6 col-6 mb-5 animate-it">
+                            <h2 class="text-white font-weight-bold mb-3 font-bebasneue" style="letter-spacing: 0px;">98%</h2>
+                            <h4 class="golden-color">Customer happy</h4>
+                            <p class="text-secondary">Our client satisfied with our services</p>
+                        </div>
+                        <div class="col-lg-6 col-6 mb-5 animate-it">
+                            <h2 class="text-white font-weight-bold mb-3 font-bebasneue" style="letter-spacing: 0px;">140K</h2>
+                            <h4 class="golden-color">Review about us</h4>
+                            <p class="text-secondary">Reviews about us from clients who have maximum satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Customer Section here -->
+    <div class="container-fluid bg-white p-5">
+        <div class="px-md-5 mx-lg-5 mx-0 px-0">
+            <div class="row">
+                <div class="col-lg-5 col-12 mb-5">
+                    <h2 class="golden-color font-weight-normal font-opensans my-4 animate-it">Our customers</h2>
+                    <p class="font-opensans mb-5 animate-it">
+                        Why you have to use our services, because you will get a very satisfying service and your goods are guaranteed safe
+                    </p>
+                    <div class="animate-it">
+                        <a href="./customer-en.html" class="black-color font-weight-bold h6 text-underline">See All &amp; Know more <i class="fal fa-long-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-12 d-flex align-items-center animate-it" style="padding-bottom: 40px;">
+                    
+                    <div id="carousel-clients" class="carousel slide d-flex justify-content-center flex-grow-1 pb-4" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-clients" data-slide-to="0" class="carousel-client-indicator active"></li>
+                            <li data-target="#carousel-clients" data-slide-to="1" class="carousel-client-indicator"></li>
+                            <li data-target="#carousel-clients" data-slide-to="2" class="carousel-client-indicator"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-interval="2500">
+                                <div class="row">
+                                    <div class="col-4 d-flex align-items-center">
+                                        <img src="./images/client1.png" class="carousel-client-image">
+                                    </div>
+                                    <div class="col-4 d-flex align-items-center">
+                                        <img src="./images/client2.png" class="carousel-client-image">
+                                    </div>
+                                    <div class="col-4 d-flex align-items-center">
+                                        <img src="./images/client3.png" class="carousel-client-image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-interval="2500">
+                                <div class="row">
+                                    <div class="col-4 d-flex align-items-center">
+                                        <img src="./images/client4.png" class="carousel-client-image">
+                                    </div>
+                                    <div class="col-4 d-flex align-items-center">
+                                        <img src="./images/client5.png" class="carousel-client-image">
+                                    </div>
+                                    <div class="col-4 d-flex align-items-center">
+                                        <img src="./images/client6.png" class="carousel-client-image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-interval="2500">
+                                <div class="row">
+                                    <div class="col-4 d-flex align-items-center">
+                                        <img src="./images/client7.png" class="carousel-client-image">
+                                    </div>
+                                    <div class="col-4 d-flex align-items-center">
+                                        <img src="./images/client8.png" class="carousel-client-image">
+                                    </div>
+                                    <div class="col-4 d-flex align-items-center">
+                                        <img src="./images/client9.png" class="carousel-client-image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Starts Here -->
+    <footer>
+        <div class="container-fluid dark-background p-5">
+            <div class="px-md-5 mx-lg-5 mx-0 py-5 px-0">
+                <div class="row">
+                    <div class="col-lg-5 col-md-6 col-12 order-1 mb-md-0 mb-5">
+                        <span class="text-uppercase light-white-color small animate-it">get to know</span>
+                        <h2 class="golden-color font-weight-normal font-montserrat my-4 animate-it">We will answer your questions, if they are</h2>
+                        <p class="text-white animate-it">The largest sea in the world transports and has partner offices around the world with a total of 1200 partners spread across various countries from Asia to Europe</p>
+                    </div>
+                    <div class="col-lg-2 col-12 order-lg-2 order-3"></div>
+                    <div class="col-lg-5 col-md-6 col-12 order-lg-3 order-2 animate-it">
+                        <form>
+                            <div class="pb-4">
+                                <input type="text" class="form-control custom-input no-focus" placeholder="Your name">
+                            </div>
+                            <div class="pb-4">
+                                <input type="text" class="form-control custom-input no-focus" placeholder="Your company">
+                            </div>
+                            <div class="pb-4">
+                                <input type="text" class="form-control custom-input no-focus" placeholder="Phone Number">
+                            </div>
+                            <div class="pb-4">
+                                <input type="email" class="form-control custom-input no-focus" placeholder="Email">
+                            </div>
+                            <div class="pb-4">
+                                <input type="text" class="form-control custom-input no-focus" placeholder="Your message">
+                            </div>
+                            <div class="pt-4">
+                                <input type="submit" value="send" class="btn btn-golden rounded-0 px-5 py-2 text-uppercase">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid black-background p-5">
+            <div class="px-md-5 mx-lg-5 mx-0 pt-5 px-0">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12 mb-4">
+                        <!-- <h6 class="text-white font-weight-bold font-opensans mb-4">VTL</h6> -->
+                        <img src="./images/logo-white.png" alt="logo" height="40px">
+                        <img src="./images/name.png" alt="name" height="40px">
+                        <p class="light-white-color font-opensans mt-3">Best cargo and logistics delivery services in the world</p>
+                        <ul class="list-inline list-unstyled pt-4">
+                            <li class="d-inline-block mr-3"><a href="#" class="light-white-color golden-hover"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="d-inline-block mx-3"><a href="#" class="light-white-color golden-hover"><i class="fab fa-instagram"></i></a></li>
+                            <li class="d-inline-block ml-3"><a href="#" class="light-white-color golden-hover"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="row">
+                            <div class="col-md-4 col-12 mb-4">
+                                <h5 class="font-weight-bold mb-4 font-bebasneue golden-color">Company</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><a href="./about-en.html" class="light-white-color">About us</a></li>
+                                    <li class="mb-2"><a href="./contact-en.html" class="light-white-color">Contact us</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-12 mb-4">
+                                <h5 class="font-weight-bold font-bebasneue mb-4 golden-color">Service’s</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">
+                                        <a href="#" class="light-white-color">
+                                            Storge, shipping and
+                                            logistics from China
+                                            to USA
+                                        </a>
+                                    </li>
+                                    <li class="mb-2"><a href="#" class="light-white-color">Storage</a></li>
+                                    <li class="mb-2"><a href="#" class="light-white-color">Logistics in China</a></li>
+                                    <li class="mb-2"><a href="#" class="light-white-color">Shipping from China</a></li>
+                                    <li class="mb-2">
+                                        <a href="#" class="light-white-color">
+                                            International storage
+                                            and distribution
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <h5 class="golden-color font-weight-bold font-bebasneue mb-4">Support</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><a href="#" class="light-white-color">FAQ</a></li>
+                                    <li class="mb-2"><a href="#" class="light-white-color">Privacy & Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-4 pt-5">
+                        <div class="row">
+                            <div class="col-md-6 col-12 light-white-color text-md-left text-center mb-md-0 mb-3">
+                                Copyright 2021 All Right Reserved
+                            </div>
+                            <div class="col-md-6 col-12 light-white-color text-md-left text-center">
+                                Made in <a href="#" class="light-white-color font-weight-bold">ROSS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-transparent no-focus rounded-circle position-fixed golden-color golden-border back-to-top">
+            <i class="fal fa-2x fa-long-arrow-up"></i>
+        </button>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="./javascript/script.js"></script>
+</body>
+</html>
